@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { toast } from 'react-toastify'
+import React from 'react'
 import { ALERT } from '../../redux/types/alertType'
 import { useTypedDispatch } from '../../utils/Typescript'
 interface IToaster {

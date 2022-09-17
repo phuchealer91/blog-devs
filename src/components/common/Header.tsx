@@ -10,8 +10,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material'
-import InputBase from '@mui/material/InputBase'
-import { alpha, styled } from '@mui/material/styles'
+
 import DrawerComp from './Drawer'
 import MenuDropdown from './Menu'
 import SearchBlog from './SearchBlog'

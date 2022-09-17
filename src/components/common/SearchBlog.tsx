@@ -5,7 +5,7 @@ import InputBase from '@mui/material/InputBase'
 import { alpha, styled } from '@mui/material/styles'
 import { NavLink, useLocation } from 'react-router-dom'
 import { getAPI } from '../../utils/FetchData'
-import { Avatar, Card, CardHeader, IconButton } from '@mui/material'
+import { Avatar, Card, CardHeader } from '@mui/material'
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,

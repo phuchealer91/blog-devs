@@ -7,12 +7,7 @@ import BlogItem from '../../components/cards/BlogItem'
 import Pagination from '@mui/material/Pagination'
 import Stack from '@mui/material/Stack'
 import { getBlogsByCategoryId } from '../../redux/actions/blogAction'
-import {
-  IBlogs,
-  IParams,
-  ReduxState,
-  useTypedDispatch,
-} from '../../utils/Typescript'
+import { IBlogs, ReduxState, useTypedDispatch } from '../../utils/Typescript'
 
 const BlogsByCategory = () => {
   const { categories, categoryBlogs } = useSelector(
@@ -42,6 +37,7 @@ const BlogsByCategory = () => {
       // Check luu tam thoi diem User da select toi trang do
       if (dataRes.search) navigate(`${dataRes.search}`)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoryId, categoryBlogs, dispatch, search])
   const handlePagination = (e: any, page: number) => {
     const search = `?page=${page}`

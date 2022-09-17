@@ -17,7 +17,6 @@ import { logOut } from '../../redux/actions/authAction'
 import { ReduxState, useTypedDispatch } from '../../utils/Typescript'
 
 const MenuDropdown = () => {
-  const [isOpen, setIsOpen] = useState(false)
   const [value, setValue] = useState()
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const { auth } = useSelector((state: ReduxState) => state)

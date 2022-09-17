@@ -13,6 +13,7 @@ const Login = () => {
     if (auth.token) {
       navigate(`/${search.replace('?', '')}`)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [auth.token, navigate])
   return (
     <div className="w-full ">
